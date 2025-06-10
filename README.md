@@ -1,29 +1,22 @@
-# 🧠 Machine Learning Models for Architecture and Automotive Analytics
+# 🏡 Energy Efficiency Prediction Model
 
-This repository contains two machine learning models:
+This project builds a **Random Forest Regression** model to predict the **Energy Efficiency** of a building using synthetic architectural features such as wall area, roof area, glazing, and overall height. It includes data visualization, model training, and evaluation steps.
 
-1. 🏢 **Energy Efficiency Prediction** — Predicts the energy efficiency rating of buildings based on features such as wall area, roof area, height, and glazing.
-2. 🚗 **Vehicle Clustering** — Groups vehicles into clusters using unsupervised learning based on attributes like weight, engine size, and horsepower.
+## 📊 Dataset
 
-Both models use **synthetic data** and are implemented using Python and common machine learning libraries.
+The dataset is **synthetically generated** for demonstration purposes and includes the following features:
 
+- `WallArea`: Total wall surface area (in square meters)
+- `RoofArea`: Total roof surface area (in square meters)
+- `OverallHeight`: Overall height of the building (in meters)
+- `GlazingArea`: Proportion of the wall that is glazed (between 0 and 1)
+- `EnergyEfficiency`: Target variable indicating the efficiency score
 
----
+## 📈 Features
 
-## 📊 1. Energy Efficiency Prediction (Regression)
-
-**Scenario:**  
-You're working for an architecture firm to build a model that predicts a building’s energy efficiency score based on its design parameters.
-
-### Features Used:
-- `WallArea`
-- `RoofArea`
-- `OverallHeight`
-- `GlazingArea`
-
-### Target:
-- `EnergyEfficiency` (synthetic score from 10 to 50)
-
-## 🚗 Vehicle Clustering Model
-
-This script clusters vehicles based on `Weight`, `EngineSize`, and `Horsepower` using **KMeans** clustering.
+- Data generation using NumPy
+- Data visualization using Seaborn and Matplotlib
+- Train/test split
+- Model training with `RandomForestRegressor`
+- Evaluation using Mean Squared Error (MSE)
+- Visual comparison of predicted vs. actual values
